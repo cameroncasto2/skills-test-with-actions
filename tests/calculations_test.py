@@ -68,3 +68,9 @@ def test_get_nth_fibonacci_ten():
 
     # Assert
     assert result == 55
+
+def test_area_of_circle_large_radius():
+    """Test with a larger radius."""
+    radius = 10
+    result = area_of_circle(radius)
+    assert abs(result - 314.159) < 1e-3
